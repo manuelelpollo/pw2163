@@ -1,0 +1,11 @@
+commit 62399f52d9f038306d53c31630e1fb0acf0adb38
+Author: manuelelpollo <manuel_pollo95@hotmail.com>
+Date:   Fri Sep 2 11:31:10 2016 -0600
+
+    cambio en mi readme.txt
+
+commit 1707e8644ae8b48a06f825f741f0620f6766070a
+Author: manuelelpollo <manuel_pollo95@hotmail.com>
+Date:   Tue Aug 30 11:55:24 2016 -0600
+
+    commit inicial con readme.txt
