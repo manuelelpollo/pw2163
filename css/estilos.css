@@ -19,13 +19,48 @@ header
 	border: 1px solid red;
 	color: white; /*letra*/
 	text-align: center; /*alineacion*/
+	padding: 0px 0px 10px 0px;
 }
 
 header nav ul li 
 {
+
 	/*border: 1px solid yellow;*/
-	background: yellow;
+	background: red;
+	border-radius: 5px;
+	box-shadow: 3px 3px;
 	display: inline-block; /*rompe el modelo de caja*/
 	color: black;
 	border: 1px solid red;
+	padding: 5px 15px;
+	margin: 0px 15px;
+	width: 80px;
+
 }
+
+
+header nav ul li:hover 
+{
+	background: white;
+	color: orange;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
