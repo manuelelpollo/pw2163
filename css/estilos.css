@@ -9,7 +9,7 @@ body /*selector -etiqueta*/
 	border: 1px solid blue;
 	border-radius: 5px;
 	max-width: 1024px;
-
+	margin: 0px auto;º
 }
 
 
@@ -22,18 +22,25 @@ header
 	padding: 0px 0px 10px 0px;
 }
 
+header img
+{
+	float: right; 
+	margin: -70px 10px 0px 0px;
+	width: 100px;
+}
+
 header nav ul li 
 {
 
 	/*border: 1px solid yellow;*/
 	background: red;
 	border-radius: 5px;
-	box-shadow: 3px 3px;
+	box-shadow: 3px 3px; /*sombrita del box*/
 	display: inline-block; /*rompe el modelo de caja*/
 	color: black;
 	border: 1px solid red;
 	padding: 5px 15px;
-	margin: 0px 15px;
+	margin: 0px 10px 50px 10px;
 	width: 80px;
 
 }
