@@ -9,7 +9,14 @@ body /*selector -etiqueta*/
 	border: 1px solid blue;
 	border-radius: 5px;
 	max-width: 1024px;
+	font-size: 16px; /*tamaño de fuente estandar*/
 	margin: 0px auto;º
+}
+footer
+{
+	border: 1px solid green;
+	font-size: 0.8em;
+	text-align: center;
 }
 
 
@@ -46,10 +53,21 @@ header nav ul li
 }
 
 
-header nav ul li:hover 
+header nav ul li:hover /*mause por ensima*/
 {
 	background: white;
 	color: orange;
+
+}
+
+main section article
+{
+	/*border: 1px solid black;*/
+	display: inline-block;
+	width: 24%;
+	vertical-align:  top; /*alinea las cajas de arriba hacia abajo*/
+	margin-top: 5px; /*baja las letras de lo azul*/
+
 
 }
 
