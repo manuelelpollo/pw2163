@@ -37,7 +37,7 @@ article p
 	-webkit-transform: translate(150px, 300px);
 }*/
 
-article:hover
+/*article:hover
 {
 	background:  black;
 	color: greenyellow;
@@ -45,6 +45,26 @@ article:hover
 	-ms-transform: rotate(180deg);
 	-o-transform: rotate(180deg);
 	-webkit-transform: rotate(180deg);
+}*/
+
+article:hover
+{
+	background:  black;
+	color: greenyellow;
+	-moz-transform: scale(1.5);
+	-ms-transform: scale(1.5);
+	-o-transform: scale(1.5);
+	-webkit-transform: scale(1.5);
+}
+
+article:hover
+{
+	background:  black;
+	color: greenyellow;
+	-moz-transform: skew(10deg,10deg);
+	-ms-transform: skew(10deg,10deg);
+	-o-transform: skew(10deg,10deg);
+	-webkit-transform: skew(10deg,10deg);
 }
 
 
