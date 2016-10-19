@@ -1,0 +1,33 @@
+body
+{
+	font-size: 16px; /*1em*/
+	margin: 0 auto;
+	max-width: 1078px; /*desicion de la empresa*/
+	min-width: 1078px;
+}
+header input
+{
+	float: right;
+	margin-right: -200px;
+	margin-top: 13px;
+	position: relative; /* esto te manda una imagen de atras hacia delante*/
+}
+header nav ul li 
+{
+	border-bottom: 1px solid gray;
+	color: gray;
+	display: inline-block;
+	font-size: 1.8em;
+	margin-right: 8px;
+}
+#granthams 
+{
+	margin-top: 20px;
+	margin-left: 25px;
+}
+#paint
+{
+	float: right;
+	margin-top: 15px;
+}
+
