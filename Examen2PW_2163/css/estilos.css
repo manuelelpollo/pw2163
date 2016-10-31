@@ -1,0 +1,107 @@
+body 
+{
+	/*border: 1px solid blue;*/
+	font-family: arial;
+	font-size: 16px;
+	margin: 0px auto;
+	max-width: 1024px;
+}
+header nav ul li
+{
+	display: inline-block;
+	margin: 20px 40px 20px -25px;
+}
+
+#art01
+{
+width: 65%;
+}
+#art02
+{
+	width: 34%;
+}
+#year
+{
+	margin: -100px 0px 0px 0px;
+}
+
+#buy
+{
+
+	/*vertical-align: top;*/
+	margin: -80px 340px 0px -10px;
+	float: right;
+}
+#seccion01 article
+{
+	display: inline-block;
+	/*width: 49%;*/
+
+	vertical-align: top;
+	
+}
+#seccionfinal article
+{
+	display: inline-block;
+	width: 19%;
+	vertical-align: top;
+}
+#go
+{
+	margin: -150px 120px 0px -10px;
+	float: right;
+}
+
+#first
+{
+	margin: 30px 0px 0px 10px;
+}
+#artitexto
+{
+	text-align: top;
+}
+
+#video1
+{
+	margin: 118px 0px 0px 0px;
+
+}
+#video2
+{
+	margin: -10px -100px 0px 0px;
+}
+#logos
+{
+	float: left;
+	margin: -14px 0px 0px 0px; 
+}
+.letra
+{
+	font-size: 4em;
+	font-weight: bold;
+}
+.balance
+{
+	font-size: 4em;
+	font-weight: bold;
+	color: #78F04C;
+}
+}
+.botones
+{
+	float: right;
+	/*margin-right: top;*/
+	vertical-align: top;
+}
+.final
+{
+	color:#CCCBCC;
+}
+.texto
+{
+	color:#8E8E8E;
+}
+.dr
+{
+	color:#CCCBCC;
+}
