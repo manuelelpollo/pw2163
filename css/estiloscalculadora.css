@@ -7,13 +7,14 @@ body
 }
 form 
 {
-	background: red;
+	background: gray;
 	border: 1px dashed black;
 	border-radius: 5px;
 	box-shadow: 15px 15px 15px rgba(50,50,50,0.7);
 	margin: 0 auto;
 	padding: 10px;
 	width: 300px;
+	padding-right: 70px;
 
 }
 form input
@@ -27,8 +28,25 @@ text-align: right;
 }
 form input[type="button"]
 {
-	background: blue;
+	background: black;
 	color: white;
 	width: 70px;
 }
-
+#ce
+{
+	/*border: 1px dashed red;*/
+	background: red;
+	color:black;
+}
+#casio
+{
+	/*float: right;*/
+	margin: 0px -10px 0px 25px;
+	border-radius: 8px;
+	width: 300px;
+	height: 40px;
+}
+.firma
+{
+	font-size: 1.3em;
+}
