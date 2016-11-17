@@ -1,0 +1,13 @@
+#imgfoto
+{
+	border-radius: 500px;
+}
+#txtnombre,#imgfoto
+{
+	display: none;  /*se oculta*/
+
+}
+#txtnombre
+{
+	border-radius: 10px;
+}

@@ -13,8 +13,11 @@ var inicio=function()
 	  dataType: 'json',
 	  success: function(data) 
 	  		{
+	  	$("#imgfoto").show("slow");
+	  	$("#txtnombre").show("slow");
 	  	$("#txtnombre").val(data.results[0].name.first+" "+data.results[0].name.last);
 	  	$("#imgfoto").attr("src",data.results[0].picture.medium);
+	  	$("#miarticle").html("Texto");
 	    console.log(data.results[0].name.first+" "+data.results[0].name.last);
 	 		 }
 		}
