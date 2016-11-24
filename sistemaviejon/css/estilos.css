@@ -1,0 +1,29 @@
+body 
+{
+	border: 1px solid blue;
+	font-family: arial;
+	font-size: 16px;
+	margin: 0px auto;
+	max-width: 1024px;
+}
+
+#logotec
+{
+	width: 130px;
+	height: 130px;
+}
+#logotec
+{
+	float: right;
+	margin: -130px -110px 0px 0px;
+}
+#sep
+{
+	margin: 10px -10px 0px 10px;
+}
+.itc
+{
+	float: right;
+	font-size: 1.3em;
+	margin: 45px 230px 150px 0px;
+}
