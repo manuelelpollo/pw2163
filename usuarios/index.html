@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<script
+  src="http://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<h1>Sistema de prueba</h1>
+		<img src="img/LOGO_TEC.png" alt="">
+		<nav>
+			<ul>
+				<li>
+					<button class="btn btn-default">
+						<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						<br>
+						INICIO
+					</button>
+				</li><li>
+					<button class="btn btn-success">
+						<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+						<br>
+						ALTA
+					</button>
+				</li><li>
+					<button class="btn btn-info">
+						<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+						<br>
+						BAJA
+					</button>
+				</li><li>
+					<button class="btn btn-warning">
+						<span class="glyphicon glyphicon-random" aria-hidden="true"></span>	
+						<br>
+						CAMBIO
+					</button>
+				</li>
+				<li>
+					<button class="btn btn-danger">
+						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+						<br>
+						CONSULTA
+					</button>
+				</li>
+			 
+			</ul>
+		</nav>
+	</header>
+	<section id="entradaUsuario">
+		<article>
+			<div class="panel panel-default">
+  				<div class="panel-heading">
+   					 <h3 class="panel-title" >Datos de usuario</h3>
+  				</div>
+  					<div class="panel-body">
+  						  <input type="text" id="txtUsuario" class="form-control"placeholder="Nombre de Usuario" autofocus>
+  						  <input type="password" id="txtClave" class="form-control" placeholder="Contraseña">
+  						  <button id="btnValidaUsuario" class="btn btn-primary btn-lg btn-block">
+  						  	Entrar
+  						  </button>
+ 					</div>
+			</div>
+			
+		</article>
+	</section>
+	
+</body>
+</html>
