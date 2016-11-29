@@ -34,23 +34,52 @@
   				</div>
   					<div class="panel-body">
   						<form action="registro_tutores.php" method="POST">
-  						  <input type="text" id="txtNombre" name="txtNombre"class="form-control"placeholder="Nombre del tutor" autofocus>
-  						  <input type="text" id="txtAppaterno" name="txtAppaterno"class="form-control"placeholder="Apellido paterno" autofocus>
-  						  <input type="text" id="txtApmaterno" name="txtApmaterno"class="form-control"placeholder="Apellido materno" autofocus>
+  							<input type="hidden" name="oculto" id="oculto" value="guardatutor">
+  						  <input type="text" id="txtNombre" name="txtNombre"class="form-control"placeholder="Nombre del tutor:" autofocus>
+  						  <input type="text" id="txtAppaterno" name="txtAppaterno"class="form-control"placeholder="Apellido paterno:" autofocus>
+  						  <input type="text" id="txtApmaterno" name="txtApmaterno"class="form-control"placeholder="Apellido materno:" autofocus>
+                <input type="text" id="aulas" name="aulas" class="form-control" placeholder="Aula:" autofocus>
+                <input type="text" id="periodo" name="periodo" class="form-control" placeholder="Periodo Escolar:" autofocus>
   						  <select name="carrera" id="carrera" >
-  						  	<option value="s">SELECCIONE LA CARRERA</option>
-  						  	<option value="Ingenieria ambiental">INGENIERIA AMBIENTAL</option>
-  						  	<option value="Ingenieria industrial">INGENIERIA INDUSTRIAL</option>
-  						  	<option value="Ingenieria bioquimica">INGENIERIA BIOQUIMICA</option>
-  						  	<option value="Ingenieria energias renovables">INGENIERIA ENERGIAS RENOVABLES</option>
-  						  	<option value="Ingenieria en tecnologiasde de informacion y comunicaciones">INGENIERIA EN TICS</option>
-  						  	<option value="Ingenieria en sistemas computacionales">INGENIERIA EN SISTEMAS COMP.</option>
-  						  	<option value="Ingenieria mecatronica">INGENIERIA MECATRONICA</option>
-  						  	<option value="Ingenieria mecanica">INGENIERIA MECANICA</option>
-  						  	<option value="Ingenieria electrica">INGENIERIA ELECTRICA</option>
-  						  	<option value="Ingenieria electronica">INGENIERIA ELECTRONICA</option>
-  						  	<option value="Ingenieria en gestion empresarial">INGENIERIA EN GESTION EMP.</option>
-  						  </select>
+                  <option value="s">SELECCIONE LA CARRERA</option>
+                  <option value="Ingenieria ambiental">INGENIERIA AMBIENTAL</option>
+                  <option value="Ingenieria industrial">INGENIERIA INDUSTRIAL</option>
+                  <option value="Ingenieria bioquimica">INGENIERIA BIOQUIMICA</option>
+                  <option value="Ingenieria energias renovables">INGENIERIA ENERGIAS RENOVABLES</option>
+                  <option value="Ingenieria en tecnologiasde de informacion y comunicaciones">INGENIERIA EN TICS</option>
+                  <option value="Ingenieria en sistemas computacionales">INGENIERIA EN SISTEMAS COMP.</option>
+                  <option value="Ingenieria mecatronica">INGENIERIA MECATRONICA</option>
+                  <option value="Ingenieria mecanica">INGENIERIA MECANICA</option>
+                  <option value="Ingenieria electrica">INGENIERIA ELECTRICA</option>
+                  <option value="Ingenieria electronica">INGENIERIA ELECTRONICA</option>
+                  <option value="Ingenieria en gestion empresarial">INGENIERIA EN GESTION EMP.</option>
+                  
+                </select>
+                <select name="horario" id="horario" >
+                  <option value="s">SELECCIONE EL HORARIO</option>
+                  <option value="7 hrs">7:00 am</option>
+                  <option value="8 hrs">8:00 am</option>
+                  <option value="9 hrs">9:00 am</option>
+                  <option value="10 hrs">10:00 am</option>
+                  <option value="11 hrs">11:00 am</option>
+                  <option value="12 hrs">12:00 pm</option>
+                  <option value="13 hrs">1:00 pm</option>
+                  <option value="14 hrs">2:00 pm</option>
+                  <option value="15 hrs">3:00 pm</option>
+                  <option value="16 hrs">4:00 pm</option>
+                  <option value="17 hrs">5:00 pm</option>
+                  <option value="18 hrs">6:00 pm</option>
+                  <option value="19 hrs">7:00 pm</option>
+                </select>
+                <select name="dias" id="dias">
+                  <option value="s">SELECCIONE EL DIA</option>
+                  <option value="lunes">Lunes</option>
+                  <option value="martes">Martes</option>
+                  <option value="miercoles">Miercoles</option>
+                  <option value="jueves">Jueves</option>
+                  <option value="viernes">Viernes</option>
+                  <option value="sabado">Sabado</option>
+                </select>
   						  <button id="btnRegistratutor" type="submit" class="btn btn-primary btn-lg btn-block">
   						  	Registrar
   						  </button>
@@ -63,7 +92,7 @@
 	
 </body>
 </html>
-// <?php
+ <?php
 	
 // 	//Conecto al servidor
 // 	$conexion = mysql_connect("localhost", "root","");
@@ -88,4 +117,4 @@
 // 	print $tabla;
 
 
-// ?>
+// // ?>

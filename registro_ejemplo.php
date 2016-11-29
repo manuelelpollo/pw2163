@@ -40,7 +40,7 @@
 			if(mysql_affected_rows()>0)
 			{
 				print "registro guardado <br>";
-				//print "<a href='ejemplo.php'> Regresar</a>";
+				print "<a href='ejemplo.php'> Regresar</a>";
 			}
 			else
 			{

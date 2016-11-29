@@ -28,10 +28,22 @@
 
 	function valida Usuario()
 	{
+		$respuesta = false;
 		$usuario = GetSQLValueString($_POST["usuario"],"text"); //limpieza con el getsqlvaluestring
 		$clave = GetSQLValueString($_POST["clave"],"text");     //limpieza con el getsqlvaluestring
 		$conexion = mysql_connect("localhost", "root", "");
-		$consulta = sprintf("select * from usuario where usuario=%s and clave=%s",);
+		mysql_select_db("bd2163");
+		$consulta = sprintf("select usuario, clave from usuario where usuario=%s and clave=%s limit 1",$usuario,$clave);  //%S S=por que viene string, si fuera int pusieramos %D
+		$resultado = mysql_query($consulta);
+		//esperamos un solo resultadol
+		if(mysql_num_rows($resultado) > 0)
+		{
+			$respuesta = true;
+
+		}
+		$arregloJSON = array('respuesta'=> $respuesta); //convertimos nuesrtra $respuesta a formato json 
+		print json_encode($arregloJSON);
+		
 	}
 //menu principal
 	$opcion = $_POST["opcion"];
