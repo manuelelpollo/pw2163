@@ -1,14 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Registro de TUTORES</title>
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<script
-  src="http://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 </head>
 <body>
 	<header>
@@ -35,12 +32,12 @@
   					<div class="panel-body">
   						<form action="registro_tutores.php" method="POST">
   							<input type="hidden" name="oculto" id="oculto" value="guardatutor">
-  						  <input type="text" id="txtNombre" name="txtNombre"class="form-control"placeholder="Nombre del tutor:" autofocus>
-  						  <input type="text" id="txtAppaterno" name="txtAppaterno"class="form-control"placeholder="Apellido paterno:" autofocus>
-  						  <input type="text" id="txtApmaterno" name="txtApmaterno"class="form-control"placeholder="Apellido materno:" autofocus>
-                <input type="text" id="aulas" name="aulas" class="form-control" placeholder="Aula:" autofocus>
-                <input type="text" id="periodo" name="periodo" class="form-control" placeholder="Periodo Escolar:" autofocus>
-  						  <select name="carrera" id="carrera" >
+  						  <input type="text" id="txtNombre" name="txtNombre"class="form-control" placeholder="Nombre del tutor:">
+  						  <input type="text" id="txtAppaterno" name="txtAppaterno"class="form-control" placeholder="Apellido paterno:">
+  						  <input type="text" id="txtApmaterno" name="txtApmaterno"class="form-control" placeholder="Apellido materno:">
+                <input type="text" id="txtaulas" name="txtaulas"class="form-control" placeholder="Aula:">
+                <input type="text" id="txtperiodo" name="txtperiodo"class="form-control" placeholder="Periodo Escolar:">
+  						  <select name="txtcarrera" id="txtcarrera" >
                   <option value="s">SELECCIONE LA CARRERA</option>
                   <option value="Ingenieria ambiental">INGENIERIA AMBIENTAL</option>
                   <option value="Ingenieria industrial">INGENIERIA INDUSTRIAL</option>
@@ -53,9 +50,8 @@
                   <option value="Ingenieria electrica">INGENIERIA ELECTRICA</option>
                   <option value="Ingenieria electronica">INGENIERIA ELECTRONICA</option>
                   <option value="Ingenieria en gestion empresarial">INGENIERIA EN GESTION EMP.</option>
-                  
                 </select>
-                <select name="horario" id="horario" >
+                <select name="txthorario" id="txthorario" >
                   <option value="s">SELECCIONE EL HORARIO</option>
                   <option value="7 hrs">7:00 am</option>
                   <option value="8 hrs">8:00 am</option>
@@ -71,7 +67,7 @@
                   <option value="18 hrs">6:00 pm</option>
                   <option value="19 hrs">7:00 pm</option>
                 </select>
-                <select name="dias" id="dias">
+                <select name="txtdias" id="txtdias">
                   <option value="s">SELECCIONE EL DIA</option>
                   <option value="lunes">Lunes</option>
                   <option value="martes">Martes</option>

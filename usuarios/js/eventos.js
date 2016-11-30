@@ -1,7 +1,7 @@
 
 var inicioUsuarios=function()
 {
-	var btnValidaUsuario=function()
+	var validaUsuario=function()
 	{				
 
 		//extraer los datos de los inputs en los html
@@ -30,14 +30,13 @@ var inicioUsuarios=function()
 				}
 				else
 				{
-					alter("Datos incorrectos: (");
+					alert("Datos incorrectos: (");
 				}
 				//si todo sale bien
-			}
-			error: function(xhr,ajaxOptions,thrownError)
-			{
-				//si todo sale mal
-			}
+			},
+			error: function(xhr,ajaxOptions,thrownError){
+					//Si todo sale mal
+				}
 		});
 		
 
@@ -47,7 +46,31 @@ var inicioUsuarios=function()
 			alert("USUARIO Y CLAVE SON OBLIGATORIAS");
 		}
 	}
-	$("#btnValidaUsuario").on("click")
+	$("#btnValidaUsuario").on("click",validaUsuario);
+
+	var teclaClave=function(tecla)
+	{
+		if(tecla.which == 13) //tecla enter
+		{
+			validaUsuario(); //funcion que valida usuario
+		}
+	}
+	//keypress se ejecuta cuando presiono una tecla sobre el input
+	$("#txtClave").on("keypress",teclaClave);
 }
 //evento inicial, prenderlo
 $(document).on("ready",inicioUsuarios);
+
+
+
+
+
+
+
+
+
+
+
+
+
+

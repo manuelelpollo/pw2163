@@ -6,9 +6,9 @@
 		$apmaterno="";
 		$carrera="";
 		$aulas="";
-		$periodo="";
 		$horario="";
 		$dias="";
+		$periodo="";
 
 		if(isset($_POST["oculto"])) //si trae valores
 		{
@@ -27,35 +27,37 @@
 		{
 			$apmaterno=$_POST["txtApmaterno"];
 		}
-		if(isset($_POST["carrera"])) //si trae valores
+		if(isset($_POST["txtcarrera"])) //si trae valores
 		{
-			$carrera=$_POST["carrera"];
+			$carrera=$_POST["txtcarrera"];
 		}
-		if(isset($_POST["aulas"]))
+		if(isset($_POST["txtaulas"]))
 		{
-			$aulas=$_POST["aulas"];
+			$aulas=$_POST["txtaulas"];
 		}
-		if(isset($_POST["periodo"]))
+		if(isset($_POST["txthorario"]))
 		{
-			$periodo=$_POST["periodo"];
+			$horario=$_POST["txthorario"];
 		}
-		if(isset($_POST["horario"]))
+		if(isset($_POST["txtdias"]))
 		{
-			$horario=$_POST["horario"];
+			$dias=$_POST["txtdias"];
 		}
-		if(isset($_POST["dias"]))
+		if(isset($_POST["txtperiodo"]))
 		{
-			$dias=$_POST["dias"];
+			$periodo=$_POST["txtperiodo"];
 		}
+		
+		
 
-		function guardatutor($nombre,$appaterno,$apmaterno,$carrera,$aulas,$periodo,$horario,$dias)
+		function guardatutor($nombre,$appaterno,$apmaterno,$carrera,$aulas,$horario,$dias,$periodo)
 		{
 			//conectarse al servidor MySQL.
 			//MySQL (servidor, usuario,contraseña)
 			$conexion= mysql_connect("localhost","root","");
 			//seleccionamos la bd
 			mysql_select_db("Tutores");
-			$consulta="insert into tutores values('".$nombre."','".$appaterno."','".$apmaterno."','".$carrera."','".$aulas."','".$periodo."','".$horario."','".$dias."',)";
+			$consulta="insert into tutores values('".$nombre."','".$appaterno."','".$apmaterno."','".$carrera."','".$aulas."','".$horario."','".$dias."','".$periodo."',)";
 			//ejecutamos la consulta
 			mysql_query($consulta);
 			//preguntamos si hubo insercion
@@ -66,7 +68,8 @@
 			}
 			else
 			{
-				print "no se pudo guardar el registro ";
+				print "no se pudo guardar el registro <br>";
+				print "<a href='index.php'> Regresar</a>";
 			}
 
 		}
@@ -74,7 +77,7 @@
 
 		switch ($oculto) {
 			case 'guardatutor':
-				guardatutor($nombre,$appaterno,$apmaterno,$carrera,$aulas,$periodo,$horario,$dias);
+				guardatutor($nombre,$appaterno,$apmaterno,$carrera,$aulas,$horario,$dias,$periodo);
 				break;
 			
 			default:

@@ -26,6 +26,12 @@ header nav ul li
 	display: inline-block;
 
 }
+main article
+{
+	display: none;
+	margin: 0 auto;
+	width: 200px;
+}
 
 #entradaUsuario
 {
@@ -33,3 +39,4 @@ header nav ul li
 	text-align: center;
 	width: 350px;
 }
+
