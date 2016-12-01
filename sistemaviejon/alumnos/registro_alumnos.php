@@ -33,7 +33,7 @@
 			$conexion= mysql_connect("localhost","root","");
 			//seleccionamos la bd
 			mysql_select_db("Tutores");
-			$consulta="insert into alumnos values('".$numcontrol."','".$nombre."','".$appaterno."','".$apmaterno."')";
+			$consulta="insert into alumnos values('.$numcontrol.','".$nombre."','".$appaterno."','".$apmaterno."')";
 			//ejecutamos la consulta
 			mysql_query($consulta);
 			//preguntamos si hubo insercion

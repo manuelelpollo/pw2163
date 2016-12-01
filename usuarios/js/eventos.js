@@ -46,6 +46,7 @@ var inicioUsuarios=function()
 			alert("USUARIO Y CLAVE SON OBLIGATORIAS");
 		}
 	}
+	
 	$("#btnValidaUsuario").on("click",validaUsuario);
 
 	var teclaClave=function(tecla)
@@ -55,8 +56,18 @@ var inicioUsuarios=function()
 			validaUsuario(); //funcion que valida usuario
 		}
 	}
+	var Alta=function()
+	{
+		$("#artAltaUsuarios").show("slow");
+	}
+	var GuardaUsuario()
+	{
+		
+	}
 	//keypress se ejecuta cuando presiono una tecla sobre el input
 	$("#txtClave").on("keypress",teclaClave);
+	$("#btnAlta").on("click",Alta);
+	$("#btnGuardaUsuario").on("click",GuardaUsuario);
 }
 //evento inicial, prenderlo
 $(document).on("ready",inicioUsuarios);

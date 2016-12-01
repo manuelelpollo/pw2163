@@ -57,9 +57,13 @@
 			$conexion= mysql_connect("localhost","root","");
 			//seleccionamos la bd
 			mysql_select_db("Tutores");
-			$consulta="insert into tutores values('".$nombre."','".$appaterno."','".$apmaterno."','".$carrera."','".$aulas."','".$horario."','".$dias."','".$periodo."',)";
+			$consulta="insert into tutores values('".$nombre."','".$appaterno."','".$apmaterno."','".$carrera."','".$aulas."','".$horario."','".$dias."','".$periodo."')";
+			//$consulta2="insert into carrera values('".$nombre."')";
 			//ejecutamos la consulta
 			mysql_query($consulta);
+			//mysql_query($consulta2);
+
+			 //echo "$consulta2" . mysql_error(); //checar errores
 			//preguntamos si hubo insercion
 			if(mysql_affected_rows()>0)
 			{

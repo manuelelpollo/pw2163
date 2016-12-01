@@ -90,27 +90,31 @@
 </html>
  <?php
 	
-// 	//Conecto al servidor
-// 	$conexion = mysql_connect("localhost", "root","");
-// 	mysql_select_db("Tutores");
-// 	$consulta="Select * from tutores order by nombre";
-// 	$resultado = mysql_query($consulta); //ejecutando una consulta
-// 	$tabla="<table border=1>";
-// 	$tabla.="<tr>";
-// 	$tabla.="<th>Nombre</th><th>appaterno</th><th>apmaterno</th><th>carrera</th>";
-// 	$tabla.="<tr>";
-// 	while ($registro = mysql_fetch_array($resultado))
-// 	{	
+	//Conecto al servidor
+	$conexion = mysql_connect("localhost", "root","");
+	mysql_select_db("Tutores");
+	$consulta="Select * from tutores order by nombre";
+	$resultado = mysql_query($consulta); //ejecutando una consulta
+	$tabla="<table border=1>";
+	$tabla.="<tr>";
+	$tabla.="<th>Nombre</th><th>appaterno</th><th>apmaterno</th><th>carrera</th><th>aulas</th><th>horario</th><th>dias</th>";
+	$tabla.="<tr>";
+	while ($registro = mysql_fetch_array($resultado))
+	{	
 		
-// 		$tabla.="<td>".$registro["nombre"]."</td>";
-// 		$tabla.="<td>".$registro["appaterno"]."</td>";
-// 		$tabla.="<td>".$registro["apmaterno"]."</td>";
-// 		$tabla.="<td>".$registro["carrera"]."</td>";
-// 		$tabla.="</tr>";
+		$tabla.="<td>".$registro["nombre"]."</td>";
+		$tabla.="<td>".$registro["appaterno"]."</td>";
+		$tabla.="<td>".$registro["apmaterno"]."</td>";
+    $tabla.="<td>".$registro["carrera"]."</td>";
+    $tabla.="<td>".$registro["aulas"]."</td>";
+    $tabla.="<td>".$registro["horario"]."</td>";
+		$tabla.="<td>".$registro["dias"]."</td>";
 
-// 	}
-// 	$tabla.="</table>";
-// 	print $tabla;
+		$tabla.="</tr>";
+
+	}
+	$tabla.="</table>";
+	print $tabla;
 
 
-// // ?>
+// ?>
