@@ -16,7 +16,7 @@
 		<nav>
 			<ul>
 				<li>
-					<button class="btn btn-default">
+					<button class="btn btn-default" id="btnInicio">
 						<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
 						<br>
 						INICIO
@@ -28,20 +28,20 @@
 						ALTA
 					</button>
 				</li><li>
-					<button class="btn btn-info" >
+					<button class="btn btn-info" id="btnBaja">
 						<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
 						<br>
 						BAJA
 					</button>
 				</li><li>
-					<button class="btn btn-warning">
+					<button class="btn btn-warning" id="btnCambio">
 						<span class="glyphicon glyphicon-random" aria-hidden="true"></span>	
 						<br>
 						CAMBIO
 					</button>
 				</li>
 				<li>
-					<button class="btn btn-danger">
+					<button class="btn btn-danger" id="btnConsulta">
 						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
 						<br>
 						CONSULTA
@@ -70,12 +70,13 @@
 	</section>
 	<main>
 		<article id="artAltaUsuarios" >
+
 			<h2>ALTA DE USUARIO</h2>
-			<input type="text" id="txtUsuario" placeholder="Usuario" class="form-control">
+			<input type="text" id="txtUsuarioAlta" placeholder="Usuario" class="form-control">
 			<br>
-			<input type="text" id="txtNombre" placeholder="Nombre" class="form-control">
+			<input type="text" id="txtNombreAlta" placeholder="Nombre" class="form-control">
 			<br>
-			<input type="text" id="txtClave" placeholder="Clave" class="form-control">
+			<input type="password" id="txtClaveAlta" placeholder="Clave" class="form-control">
 			<br>
 			<select name="txtTipo" id="txtTipo" class="form-control">
 				<option value="s">Selecciona un tipo</option>
@@ -84,13 +85,86 @@
 				<option value="Colado">Colado</option>
 			</select>
 			<br>
-			<button class="btn btn-success" btn-lg btn-block id="btnGuardaUsuario">
+			<button class="btn btn-success btn-lg btn-block" id="btnGuardaUsuario">
 				Guardar
 				
 			</button>
-			
+			 
 		</article>
 	</main>
+	<section >
+		<article  id="artBajaUsuarios">
+			<h2>BAJA DE USUARIOS</h2>
+			<br>
+			<span>Ingrese el usuario a dar de baja</span>
+			<input type="text" id="txtUsuarioBaja" placeholder="Usuario" class="form-control">
+			<br>
+			<button class="btn btn-success btn-lg btn-block" id="btnBajaUsuario">BAJA USUARIO</button>
+			<br>
+
+			
+		</article>
+	</section>
+	<section>
+		<article id="artCambioUsuario">
+		<h2>MODIFICACION  DE USUARIO</h2>
+		<br>
+			<span>USUARIO A MODIFICAR</span>
+			<input type="text" id="txtUsuarioamodificar" placeholder="usuario" class="form-control">
+			<hr>
+			<br>
+			<span>Valores nuevos</span>
+			<input type="text" id="txtUsuarioCambio" placeholder="Usuario" class="form-control">
+			<br>
+			<input type="text" id="txtNombreCambio" placeholder="Nombre" class="form-control">
+			<br>
+			<input type="password" id="txtClaveCambio" placeholder="Clave" class="form-control">
+			<br>
+			<select name="txtTipoCambio" id="txtTipoCambio" class="form-control">
+				<option value="s">Selecciona un tipo</option>
+				<option value="Administrador">Administrador</option>
+				<option value="Invitado">Invitado</option>
+				<option value="Colado">Colado</option>
+			</select>
+			<br>
+			<button class="btn btn-success btn-lg btn-block" id="btnGuardaUsuarioCambio">
+				Guardar
+				
+			</button>
+			</article>
+	</section>
+	<section>
+		<article id="artConsultaUsuario">
+			<h2>CONSULTA</h2>
+			<br>
+			<span>Ingrese el usuario a consultar</span>
+			<br>
+			<input type="text" id="txtUsuarioConsulta" placeholder="Usuario" class="form-control">
+			<br>
+			<button class="btn btn-success btn-lg btn-block" id="btnConsultaUsuario">Consultar</button>
+			<br>
+
+		</article>
+	</section>
+	 
+	<section>
+		<article id="artInicio">
+			<h2>Created by:
+				<br>
+				Manuel Antonio Nuñez Topete</h2>
+
+				<img src="img/manuel.jpg" alt="" id="mifoto">
+				<br>
+				<h3>Proyecto creado para la materia Programacion Web</h3>
+				<br>
+				<h3>Profesor: Martin Leonardo Nevarez Rivas</h3>
+				<br>
+				<h3>Instituto Tecnologico de Culiacan, 2-Diciembre-2016</h3>
+				<br>
+				<hr>
+				<span class="final">Uso solo para fines Educativos, Todos los derechos Reservados 2016</span>
+		</article>
+	</section>
 	
 
 
