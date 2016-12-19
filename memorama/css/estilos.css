@@ -1,0 +1,81 @@
+body
+{
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+
+header 
+{
+	margin-top: 30px;
+	text-align: center;
+}
+
+
+
+header nav ul li
+{
+	margin-right: 10px;
+	display: inline-block;
+}
+
+main{
+	margin-top: 50px;
+}
+
+#yanira,#manuel {
+    border-radius:5000px;
+    width: 200px;
+    height: 200px;
+}
+
+#artJuega
+{
+	
+display: none;
+	text-align: center;
+	width: 500px;
+	margin: 0 auto;
+}
+
+#artAltaJugadores
+{
+	width: 350px;
+	margin: 0 auto;
+	display: none;
+}
+#artJugar1,#artPartida,#artJugar2
+{
+	width: 450px;
+	margin: 0 auto;
+	display: none;
+}
+#presentacion
+{
+	text-align: center;
+	width: 600px;
+	margin: 0 auto;
+	display: none;
+}
+
+
+
+#artCampo
+{
+	/*display: none;*/
+	margin: 0 auto;
+	text-align: center;
+}
+
+
+
+
+.carta
+{
+	width: 100px;
+	height: 100px;
+	opacity: 0;
+}
+
+
+

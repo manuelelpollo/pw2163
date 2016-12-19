@@ -1,13 +1,71 @@
-body 
+body
 {
-	border: 1px solid red;
-	font-family: arial;
-	font-size: 16px;
-	margin: 0px auto;
+	margin: 0 auto;
 	max-width: 1024px;
-}
-header
+ }
+header img 
 {
+	float: right;
+	width: 100px;
+	margin-top: -50px;
+}
+
+header 
+{
+	margin-bottom: 100px;
 	text-align: center;
 }
- 
+header nav ul li 
+{
+	padding: 10px;
+	display: inline-block;
+
+}
+ nav
+{
+	display: none;
+}
+#entradaUsuario
+{
+	width: 400px;
+	margin: 0 auto;
+}
+#artAltaTutores,#artBajaTutor,#artBajaAlumno,#artEditaTutor,#artEditaAlumno,#artAsigna
+{
+	display: none;
+	width: 800px;
+	margin:0 auto;
+}
+#tablita
+{
+	display: none;
+}
+#artAltaAlumno
+{
+	width: 800px;
+	margin:0 auto;
+	display: none;
+}
+#btnTutor,#btnAlumno,#btnTutorBaja,#btnTutorEdita,#btnAlumnoBaja,#btnAlumnoEdita,#btnTutorConsulta,#btnAlumnoConsulta
+{
+	text-align: center;
+	width: 300px;
+	margin: 0px 60px 20px 120px;
+
+	display: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

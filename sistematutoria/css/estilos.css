@@ -1,9 +1,60 @@
-body 
+body
 {
-	border: 1px solid red;
-	font-family: arial;
-	font-size: 16px;
-	margin: 0px auto;
+	font-size: 16px; /*1em*/
+	margin: 0 auto;
 	max-width: 1024px;
+  /*  border: 1px solid red;*/
+    background: #E3E1E1;
 }
+#itc
+{
+	float: right;
+	margin: 10px -490px 0px 0px;
+}
+#sep
+{
+	margin: 10px -80px 0px 30px;
+}
+.nombre
+{
+	float:right;
+	margin: 50px 200px 0px -100px;
+}
+header nav ul li
+{
+	display: inline-block;
+	margin: 15px 20px 0px 0px;
+	/*float: right;*/
 
+}
+ header nav 
+ {
+
+ 	margin-left: 400px;
+ }
+ footer
+ {
+ 	background: #F1F1F1;
+ 	text-align: center;
+ }
+ #bienvenido
+ {
+ 	vertical-align: top;
+  display: inline-block;
+ }
+#entraUsuario
+{
+    display: inline-block;
+    width: 400px;
+    margin: 10px 0px 100px 0px;
+
+}
+#seccion1
+{
+ 
+	background: #D3D3D3;
+}
+#boton
+{
+	border-radius: 10px;
+}

@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="js/eventos.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Sistema de prueba</h1>
+		<img src="img/LOGO_TEC.png" alt="">
+		<nav>
+			<ul>
+				<li>
+					<button class="btn btn-default" id="btnInicio">
+						<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						<br>
+						INICIO
+					</button>
+				</li><li>
+					<button class="btn btn-success" id="btnAlta">
+						<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+						<br>
+						ALTA
+					</button>
+				</li><li>
+					<button class="btn btn-info" id="btnBaja">
+						<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+						<br>
+						BAJA
+					</button>
+				</li><li>
+					<button class="btn btn-warning" id="btnCambio">
+						<span class="glyphicon glyphicon-random" aria-hidden="true"></span>	
+						<br>
+						CAMBIO
+					</button>
+				</li>
+				<li>
+					<button class="btn btn-danger" id="btnConsulta">
+						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+						<br>
+						CONSULTA
+					</button>
+				</li>
+			 
+			</ul>
+		</nav>
+	</header>
+	<section id="entradaUsuario">
+		<article>
+			<div class="panel panel-default">
+  				<div class="panel-heading">
+   					 <h3 class="panel-title" >Datos de usuario</h3>
+  				</div>
+  					<div class="panel-body">
+  						  <input type="text" id="txtUsuario" class="form-control"placeholder="Nombre de Usuario" autofocus>
+  						  <input type="password" id="txtClave" class="form-control" placeholder="Contraseña">
+  						  <button id="btnValidaUsuario" class="btn btn-primary btn-lg btn-block">
+  						  	Entrar
+  						  </button>
+ 					</div>
+			</div>
+			
+		</article>
+	</section>
+	<main>
+		<article id="artAltaUsuarios" >
+
+			<h2>ALTA DE USUARIO</h2>
+			<input type="text" id="txtUsuarioAlta" placeholder="Usuario" class="form-control">
+			<br>
+			<input type="text" id="txtNombreAlta" placeholder="Nombre" class="form-control">
+			<br>
+			<input type="password" id="txtClaveAlta" placeholder="Clave" class="form-control">
+			<br>
+			<select name="txtTipo" id="txtTipo" class="form-control">
+				<option value="s">Selecciona un tipo</option>
+				<option value="Administrador">Administrador</option>
+				<option value="Invitado">Invitado</option>
+				<option value="Colado">Colado</option>
+			</select>
+			<br>
+			<button class="btn btn-success btn-lg btn-block" id="btnGuardaUsuario">
+				Guardar
+				
+			</button>
+			 
+		</article>
+	</main>
+	<section >
+		<article  id="artBajaUsuarios">
+			<h2>BAJA DE USUARIOS</h2>
+			<br>
+			<span>Ingrese el usuario a dar de baja</span>
+			<input type="text" id="txtUsuarioBaja" placeholder="Usuario" class="form-control">
+			<br>
+			<button class="btn btn-success btn-lg btn-block" id="btnBajaUsuario">BAJA USUARIO</button>
+			<br>
+
+			
+		</article>
+	</section>
+	<section>
+		<article id="artCambioUsuario">
+		<h2>MODIFICACION  DE USUARIO</h2>
+		<br>
+			<span>USUARIO A MODIFICAR</span>
+			<input type="text" id="txtUsuarioamodificar" placeholder="usuario" class="form-control">
+			<hr>
+			<br>
+			<span>Valores nuevos</span>
+			<input type="text" id="txtUsuarioCambio" placeholder="Usuario" class="form-control">
+			<br>
+			<input type="text" id="txtNombreCambio" placeholder="Nombre" class="form-control">
+			<br>
+			<input type="password" id="txtClaveCambio" placeholder="Clave" class="form-control">
+			<br>
+			<select name="txtTipoCambio" id="txtTipoCambio" class="form-control">
+				<option value="s">Selecciona un tipo</option>
+				<option value="Administrador">Administrador</option>
+				<option value="Invitado">Invitado</option>
+				<option value="Colado">Colado</option>
+			</select>
+			<br>
+			<button class="btn btn-success btn-lg btn-block" id="btnGuardaUsuarioCambio">
+				Guardar
+				
+			</button>
+			</article>
+	</section>
+	<section>
+		<article id="artConsultaUsuario">
+			<h2>CONSULTA</h2>
+			<br>
+			<span>Ingrese el usuario a consultar</span>
+			<br>
+			<input type="text" id="txtUsuarioConsulta" placeholder="Usuario" class="form-control">
+			<br>
+			<button class="btn btn-success btn-lg btn-block" id="btnConsultaUsuario">Consultar</button>
+			<br>
+
+		</article>
+	</section>
+	 
+	<section>
+		<article id="artInicio">
+			<h2>Created by:
+				<br>
+				Manuel Antonio Nuñez Topete</h2>
+
+				<img src="img/manuel.jpg" alt="" id="mifoto">
+				<br>
+				<h3>Proyecto creado para la materia Programacion Web</h3>
+				<br>
+				<h3>Profesor: Martin Leonardo Nevarez Rivas</h3>
+				<br>
+				<h3>Instituto Tecnologico de Culiacan, 2-Diciembre-2016</h3>
+				<br>
+				<hr>
+				<span class="final">Uso solo para fines Educativos, Todos los derechos Reservados 2016</span>
+		</article>
+	</section>
+	
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>MEMORAMA</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+			<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+		  <script src="js/eventos.js"></script>
+		  <link rel="stylesheet" type="text/css" href="css/estilos.css">
+</head>
+<body>
+	 
+        <header>
+		<h1>MEMORAMA</h1>
+		<nav>
+			<ul>
+				<li>
+					<button class="btn btn-default" id="btnInicio">
+						<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						<br>
+						INICIO
+					</button>
+				</li><li>
+					<button class="btn btn-default" id="btnAlta">
+						<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+						<br>
+						REGISTRARSE
+					</button>
+				</li><li>
+					<button class="btn btn-default" id="btnJuega">
+						<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+						<br>
+						JUGAR
+					</button>
+				</li>
+			
+			 
+			</ul>
+		</nav>
+      </header>
+      <section>
+      	<article id="presentacion">
+      		<h1 align="center">Juego Memorama</h1>
+      		
+      		<div class="panel panel-default">
+	 				 <div class="panel-heading">
+	   					 <h3 class="panel-title">MEMORAMA</h3>
+	 				 </div>
+	 					 <div class="panel-body">
+	    
+							<h3>Integrantes:</h3>
+				      		<img src="imagenes/yanira.jpg" alt="" id="yanira">
+				      		<h2>Irma Yanira Hauchbaum Orosco</h2>
+				      		<h3>13170278</h3>
+				      		<br>
+				      		<img src="imagenes/manuel.jpg" alt="" id="manuel">
+				      		<h2>Manuel Antonio Nuñez Topete</h2>
+				      		<h3>13170318</h3>
+											
+
+
+	  					</div>
+				</div>
+      		
+      	</article>
+      </section>
+      <section>
+      	<article id="artAltaJugadores">
+				<h2 align="center">REGISTRO DE JUGADORES</h2>
+				<div class="panel panel-default">
+	 				 <div class="panel-heading">
+	   					 <h3 class="panel-title">Registro Jugador</h3>
+	 				 </div>
+	 					 <div class="panel-body">
+	    
+							<input type="text" id="nombrejugador" class="form-control" placeholder="Nombre:" autofocus>
+							<br>
+							<input type="password" id="contraseñajugador"  class="form-control" placeholder="contraseña:" autofocus>
+							<br>
+							<input type="text" id="edad" class="form-control" placeholder="edad:" autofocus>
+							<br>
+							<button type="button" class="btn btn-default btn-lg btn-block" id="btnregistra">Registrar</button>
+							
+
+
+	  					</div>
+				</div>
+			</article>
+			
+      </section>
+      <section>
+      	<article id="artPartida">
+				<h2 align="center">INICIAR	JUEGO	</h2>
+				<div class="panel panel-default">
+	 				 <div class="panel-heading">
+	   					 <h3 class="panel-title">JUGAR</h3>
+	 				 </div>
+	 					 <div class="panel-body">
+						
+	   						 <br>
+							<input type="text" id="nombrepartida" class="form-control" placeholder="Nombre Partida:" autofocus>
+							<br>						
+							<button type="button" class="btn btn-default btn-lg btn-block" id="btnPartida">Guardar</button>
+							
+
+
+	  					</div>
+				</div>
+			</article>
+			<article id="artJugar1">
+				<h2 align="center">INICIAR	JUEGO	</h2>
+				<div class="panel panel-default">
+	 				 <div class="panel-heading">
+	   					 <h3 class="panel-title">JUGAR</h3>
+	 				 </div>
+	 					 <div class="panel-body">
+						
+	   						 <br>
+							<input type="text" id="nombrejugador1" class="form-control" placeholder="jugador1:" autofocus>
+							<br>
+							<input type="password" id="contraseñajugador1"  class="form-control" placeholder="contraseña:" autofocus>
+							<br>							
+							<button type="button" class="btn btn-default btn-lg btn-block" id="btningresa1">VERIFICAR</button>
+							
+
+
+	  					</div>
+				</div>
+			</article>
+			<article id="artJugar2">
+				<h2 align="center">INICIAR	JUEGO	</h2>
+				<div class="panel panel-default">
+	 				 <div class="panel-heading">
+	   					 <h3 class="panel-title">JUGAR</h3>
+	 				 </div>
+	 					 <div class="panel-body">
+						
+	   						 <br>
+							<input type="text" id="nombrejugador2" class="form-control" placeholder="jugador2:" autofocus>
+							<br>
+							<input type="password" id="contraseñajugador2"  class="form-control" placeholder="contraseña:" autofocus>
+							<br>							
+							<button type="button" class="btn btn-default btn-lg btn-block" id="btningresa2">JUGAR</button>
+							
+
+
+	  					</div>
+				</div>
+			</article>
+      </section>
+      <main>
+	      			
+ 		
+				<article id="artJuega">
+						 <div class="panel-body">
+							    
+							    <button id="btnIniciaPartida" class="btn btn-info btn-lg btn-block">Iniciar Partida</button>
+
+						  </div>
+						
+					</div>
+				</article>
+				<article id="artCampo" style="">
+						       
+						        <article id="tablero">
+						        	<table id="tablero2" border="1">
+						        		<tr></tr>
+						        		<tr></tr>
+						        		<tr></tr>
+						        		<tr></tr>
+						        		<tr></tr>
+						        		<tr></tr>
+						        		<tr></tr>
+						        		<tr></tr>
+						        	</table>
+						        </article>
+
+
+
+						         </article>
+
+			
+	</main>
+</body>
+</html>

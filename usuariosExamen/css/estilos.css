@@ -1,0 +1,75 @@
+body
+{
+	margin: 0 auto;
+	max-width: 1024px;
+}
+header img 
+{
+	float: right;
+	width: 100px;
+	margin-top: -50px;
+}
+
+header 
+{
+	margin-bottom: 100px;
+	text-align: center;
+}
+header nav
+{
+	display: none;
+}
+
+header nav ul li 
+{
+	padding: 10px;
+	display: inline-block;
+
+}
+main article
+{
+	display: none;
+	margin: 0 auto;
+	width: 200px;
+}
+#artBajaUsuarios
+{
+	display: none;
+	margin: 0 auto;
+	width: 200px;
+}
+#artCambioUsuario
+{
+	display: none;
+	margin: 0 auto;
+	width: 200px;
+}
+#entradaUsuario
+{
+	margin: 0 auto;
+	text-align: center;
+	width: 350px;
+}
+#artConsultafinal
+{
+	display: none;
+}
+#artConsultaUsuario
+{
+	display: none;
+	margin: 0 auto;
+	text-align: center;
+	width: 350px;
+}
+#artInicio
+{
+	display: none;
+	text-align: left;
+}
+#mifoto
+{
+	margin: -150px 0px 0px 0px;
+	width: 300px;
+	height: 500px;
+	float: right;
+}

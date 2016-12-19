@@ -1,34 +1,79 @@
-<!DOCTYPE html>
+
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<title>Sistema Tutorias</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/estilos.css">
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="js/eventos.js"></script>
 </head>
 <body>
 	<header>
-		
-		<img id="sep" src="img/header-sep.png" alt="">
-		<span class="itc">INSTITUTO TECNOLOGICO DE CULIACAN</span>
-		<img id="logotec" src="img/LOGO_TEC.png" alt="" >
-		
-		
+		<img src="img/sep.png"  id="sep"alt="">
+		<span class="nombre"> <h3>TECNOLÓGICO NACIONAL DE MÉXICO</h3>
+			
+			<h4>INSTITUTO TECNOLÓGICO DE CULIACÁN</h4></span>
+			<img src="img/itc.png"  id="itc" alt="">
+
 		<nav>
 			<ul>
-				<li>INICIO</li>
-				<li>TUTORES</li>
-				<li>INFORMACION</li>
-				<li>ALUMNOS</li>
+				<li><div class="btn-group" role="group" aria-label="...">
+
+ 					 <button type="button" class="btn btn-default" id="boton">INCIO</button>
+  
+					</div>
+				<li><div class="btn-group" role="group" aria-label="...">
+
+ 					 <button type="button" class="btn btn-default" id="boton">ACCESO</button>
+  
+					</div></li>
 			</ul>
 		</nav>
-		
 	</header>
-	<section>
-		<img id="tutorias" src="img/tutorias.png" alt="">
+	<section id="seccion1">
+		<article id="bienvenido">
+			<h3>BIENVENIDO</h3> 
+			<h5>Sistema de carga y seguimiento de tutorias.</h5>
+			<br>
+			En el cual podras encontrar informacion <br>sobre tutores, 
+			como alumno, tendras <br> el derecho de cargar<br> tus turorias 
+			correspondientes...
+			<br>
+			<br>
+			 Para resolver cualquier inquietud si eres <br>maestro pide ayuda al Jefe de Docencia y si <br>eres alumno pide ayuda en La División. <br> 
+
+		</article>
+		<article id="entraUsuario">
+			<div class="panel panel-default">
+				<div class="panel-heading">
+						 <h3 class="panel-title" >Datos de usuario</h3>
+				</div>
+					<div class="panel-body">
+						  <input type="text" id="txtUsuario" class="form-control"placeholder="Nombre de Usuario" autofocus>
+						  <br>
+						  <input type="password" id="txtClave" class="form-control" placeholder="Contraseña">
+						  <br>
+						  <button id="btnEntra" class="btn btn-primary btn-lg btn-block">
+						  	Entrar
+						  </button>
+			 		</div>
+			</div>
+					
+		</article>		
+		<article></article>
 	</section>
-	<section>
-		<span>Aqui va la informacion de la escuela, datos, contacto etc</span>
-	</section>
+	<footer >
+		<span>
+			<br>Instituto Tecnológico de Culiacán
+			<br>
+Av. Juan de Dios Bátiz 310 Pte. Col. Guadalupe. Culiacán, Sinaloa. C.P. 80220 Teléfono: +52 (667) 713 -17-96, 713-38-04 <br>
+Tecnológico Nacional de México - Algunos derechos reservados © 2014-2017 
+<br>
+Política de Privacidad
+
+ </span>
+	</footer>
 	
 </body>
 </html>

@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Administracion</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/estilos.css">
+	<script src="js/jquery.js"></script>
+	<script src="js/eventos.js"></script>
+</head>
+<body>
+	<header>
+		<h1>Sistema Administracion Tutorias</h1>
+		<img src="img/LOGO_TEC.png" alt="">
+		<nav>
+			<ul>
+				<li>
+					<button class="btn btn-default" id="btnInicio">
+						<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+						<br>
+						INICIO
+					</button>
+				</li><li>
+					<button class="btn btn-default" id="btnAlta">
+						<span class="glyphicon glyphicon-arrow-up" aria-hidden="true"></span>
+						<br>
+						ALTA
+					</button>
+				</li><li>
+					<button class="btn btn-default" id="btnBaja">
+						<span class="glyphicon glyphicon-arrow-down" aria-hidden="true"></span>
+						<br>
+						BAJA
+					</button>
+				</li><li>
+					<button class="btn btn-default" id="btnEdita">
+						<span class="glyphicon glyphicon-random" aria-hidden="true"></span>	
+						<br>
+						EDITAR
+					</button>
+				</li>
+				<li>
+					<button class="btn btn-default" id="btnConsulta">
+						<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+						<br>
+						CONSULTA
+					</button>
+				</li>
+				<li>
+					<button class="btn btn-default" id="btnAsigna">
+						<span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+						<br>
+						ASIGNACION
+					</button>
+				</li>
+			 
+			</ul>
+		</nav>
+	<!-- Single button -->
+
+	</header>
+	</section>
+	<section id="entradaUsuario">
+		<article >
+			<div class="panel panel-default">
+  				<div class="panel-heading">
+   					 <h3 class="panel-title" >Datos de usuario</h3>
+  				</div>
+  					<div class="panel-body">
+  						  <input type="text" id="txtUsuario" class="form-control"placeholder="Nombre de Usuario" autofocus>
+  						  <br>
+  						  <input type="password" id="txtClave" class="form-control" placeholder="Contraseña">
+  						  <br>
+  						  <button id="btnIniciar" class="btn btn-default btn-lg btn-block" >
+  						  	Entrar
+  						  </button>
+ 					</div>
+			</div>
+			
+		</article>
+	</section>
+	<section>
+					<article><button id="btnTutor" class="btn btn-default btn-lg btn-block">
+  						  	TUTOR
+  						  </button>
+  						  <button id="btnAlumno" class="btn btn-default btn-lg btn-block">
+  						  	ALUMNO
+  						  </button>
+  					</article>	
+  					<article>
+  						<button id="btnTutorBaja" class="btn btn-default btn-lg btn-block">
+  						  	TUTOR
+  						  </button>
+  						  <button id="btnAlumnoBaja" class="btn btn-default btn-lg btn-block">
+  						  	ALUMNO
+  						  </button>
+  					</article>	  
+  					<article>
+  						<button id="btnTutorEdita" class="btn btn-default btn-lg btn-block">
+  						  	TUTOR
+  						  </button>
+  						  <button id="btnAlumnoEdita" class="btn btn-default btn-lg btn-block">
+  						  	ALUMNO
+  						  </button>
+  					</article>
+  					<article>
+  						<button id="btnTutorConsulta" class="btn btn-default btn-lg btn-block">
+  						  	TUTOR
+  						  </button>
+  						  <button id="btnAlumnoConsulta" class="btn btn-default btn-lg btn-block">
+  						  	ALUMNO
+  						  </button>
+  					</article>		  
+	</section>
+	<section>
+	
+			<article id="artAltaTutores">
+				<h2 align="center">ALTA DE TUTORES</h2>
+				<div class="panel panel-default">
+	 				 <div class="panel-heading">
+	   					 <h3 class="panel-title">Alta Tutor</h3>
+	 				 </div>
+	 					 <div class="panel-body">
+	    
+							<input type="text" id="nombreTutor" class="form-control" placeholder="Nombre:" autofocus>
+							<br>
+							<input type="text" id="appTutor"  class="form-control" placeholder="Apellido Paterno:" autofocus>
+							<br>
+							<input type="text" id="apmTutor" class="form-control" placeholder="Apellido Materno:" autofocus>
+							<br>
+							<input type="text" id="carreraTutor" class="form-control" placeholder="Carrera:">
+							<br>
+							<input type="text" id="aulas" class="form-control" placeholder="Aula:">
+							<br>
+							<input type="text" id="horarios" class="form-control" placeholder="Horario:">	
+							<br>
+							<input type="text" id="dias" class="form-control" placeholder="Dia:">
+							<br>
+							<input type="text" id="periodo" class="form-control" placeholder="Periodo:">
+							<br>
+							<button type="button" class="btn btn-default btn-lg btn-block" id="btnregistraTutor">Registrar</button>
+							
+
+
+	  					</div>
+				</div>
+			</article>
+			<article id="artAltaAlumno">
+				<h2 align="center">ALTA DE ALUMNOS</h2>
+				<div class="panel panel-default">
+	 				 <div class="panel-heading">
+	   					 <h3 class="panel-title">Alta alumno</h3>
+	 				 </div>
+	 					 <div class="panel-body">
+	    
+							<input type="text" id="nombreAlumno" class="form-control" placeholder="Nombre:" autofocus>
+							<br>
+							<input type="text" id="appAlumno"  class="form-control" placeholder="Apellido Paterno:" autofocus>
+							<br>
+							<input type="text" id="apmAlumno" class="form-control" placeholder="Apellido Materno:" autofocus>
+							<br>
+							<input type="text" id="noControl" class="form-control" placeholder="Numero de Control:" autofocus>
+							<br>
+							<input type="text" id="carreraAlumno" class="form-control" placeholder="Carrera:">
+							<br>
+							<input type="text" id="semestreAlumno" class="form-control" placeholder="Semestre:">
+							<br>
+							<button type="button" class="btn btn-default btn-lg btn-block" id="btnregistraAlumno">Registrar</button>
+							
+
+
+	  					</div>
+				</div>
+			</article>
+	</section>
+	<section>
+		<article id="artBajaTutor">
+			<h2 align="center">BAJA DE TUTORES</h2>
+				<div class="panel panel-default">
+	 				 <div class="panel-heading">
+	   					 <h3 class="panel-title">Baja Tutor</h3>
+	 				 </div>
+	 					 <div class="panel-body">
+	    					<span>Ingrese el nombre del tutor y precione "enter".</span>
+							<input type="text" id="nombreTutorB" class="form-control" placeholder="Nombre:" autofocus>
+							<br>
+							<input type="text" id="appTutorB"  class="form-control" placeholder="Apellido Paterno:" autofocus>
+							<br>
+							<input type="text" id="apmTutorB" class="form-control" placeholder="Apellido Materno:" autofocus>
+							<br>
+							<input type="text" id="carreraTutorB" class="form-control" placeholder="Carrera:">
+							<br>
+							<input type="text" id="aulasB" class="form-control" placeholder="Aula:">
+							<br>
+							<input type="text" id="horariosB" class="form-control" placeholder="Horario:">	
+							<br>
+							<input type="text" id="diasB" class="form-control" placeholder="Dia:">
+							<br>
+							<input type="text" id="periodoB" class="form-control" placeholder="Periodo:">
+							
+							<br>
+						
+							<button type="button" class="btn btn-default btn-lg btn-block" id="btnBajaTutor">Baja</button>
+							
+
+
+	  					</div>
+				</div>
+			
+		</article>
+		<article id="artBajaAlumno">
+			<h2 align="center">BAJA DE ALUMNOS</h2>
+				<div class="panel panel-default">
+	 				 <div class="panel-heading">
+	   					 <h3 class="panel-title">Baja alumno</h3>
+	 				 </div>
+	 					 <div class="panel-body">
+	    					<span>Ingrese el nombre del Alumno y precione "enter".</span>
+							<input type="text" id="nombreAlumnoB" class="form-control" placeholder="Nombre:" autofocus>
+							<br>
+							<input type="text" id="appAlumnoB"  class="form-control" placeholder="Apellido Paterno:" autofocus>
+							<br>
+							<input type="text" id="apmAlumnoB" class="form-control" placeholder="Apellido Materno:" autofocus>
+							<br>
+							<input type="text" id="noControlB" class="form-control" placeholder="Numero de Control:" autofocus>
+							<br>
+							<input type="text" id="carreraAlumnoB" class="form-control" placeholder="Carrera:">
+							<br>
+							<input type="text" id="semestreAlumnoB" class="form-control" placeholder="Semestre:">
+							<br>
+							<button type="button" class="btn btn-default btn-lg btn-block" id="btnbajaAlumno">
+								Baja</button>
+							
+
+
+	  					</div>
+				</div>
+			
+		</article>
+	</section>
+	<section>
+		<article id="artEditaTutor">
+			<h2 align="center">EDICION DE TUTORES</h2>
+				<div class="panel panel-default">
+	 				 <div class="panel-heading">
+	   					 <h3 class="panel-title">Edita Tutor</h3>
+	 				 </div>
+	 					 <div class="panel-body">
+	    					<span>Ingrese el nombre del tutor y precione "enter".</span>
+							<input type="text" id="nombreTutorE" class="form-control" placeholder="Nombre:" autofocus>
+							<br>
+							<input type="text" id="appTutorE"  class="form-control" placeholder="Apellido Paterno:" autofocus>
+							<br>
+							<input type="text" id="apmTutorE" class="form-control" placeholder="Apellido Materno:" autofocus>
+							<br>
+							<input type="text" id="carreraTutorE" class="form-control" placeholder="Carrera:">
+							<br>
+							<input type="text" id="aulasE" class="form-control" placeholder="Aula:">
+							<br>
+							<input type="text" id="horariosE" class="form-control" placeholder="Horario:">	
+							<br>
+							<input type="text" id="diasE" class="form-control" placeholder="Dia:">
+							<br>
+							<input type="text" id="periodoE" class="form-control" placeholder="Periodo:">
+							<br>
+						
+							<button type="button" class="btn btn-default btn-lg btn-block" id="btnEditaTutor">Guardar</button>
+							
+
+
+	  					</div>
+				</div>
+			
+		</article>
+		<article id="artEditaAlumno">
+			<h2 align="center">EDICION DE ALUMNOS</h2>
+				<div class="panel panel-default">
+	 				 <div class="panel-heading">
+	   					 <h3 class="panel-title">Edicion alumno</h3>
+	 				 </div>
+	 					 <div class="panel-body">
+	    					<span>Ingrese el nombre del Alumno y precione "enter".</span>
+							<input type="text" id="nombreAlumnoE" class="form-control" placeholder="Nombre:" autofocus>
+							<br>
+							<input type="text" id="appAlumnoE"  class="form-control" placeholder="Apellido Paterno:" autofocus>
+							<br>
+							<input type="text" id="apmAlumnoE" class="form-control" placeholder="Apellido Materno:" autofocus>
+							<br>
+							<input type="text" id="noControlE" class="form-control" placeholder="Numero de Control:" autofocus>
+							<br>
+							<input type="text" id="carreraAlumnoE" class="form-control" placeholder="Carrera:">
+							<br>
+							<input type="text" id="semestreAlumnoE" class="form-control" placeholder="Semestre:">
+							<br>
+							<button type="button" class="btn btn-default btn-lg btn-block" id="btnEditaAlumno">
+								Guardar</button>
+							
+
+
+	  					</div>
+				</div>
+			
+		</article>
+		<article id="artConsultas">
+			<table id="tablaConsultas" class="table" border=1>				
+			</table>
+		</article>
+		<article id="artConsultasA">
+			<table id="tablaConsultasA" class="table" border=1>				
+			</table>
+		</article>
+	</section>
+	<section>
+		<article id="artAsigna">
+			<h2 align="center">ASIGNACION  DE ALUMNOS</h2>
+				<div class="panel panel-default">
+	 				 <div class="panel-heading">
+	   					 <h3 class="panel-title">Asignacion alumno</h3>
+	 				 </div>
+	 					 <div class="panel-body">
+    						<h3>Seleccione un tutor</h3>
+	    					<select id="selectTuto" class="form-control">
+	    						
+	    					</select>
+	    					<h3>Seleccione un alumno</h3>
+	    					<select id="selectAlum" class="form-control">
+	    						
+	    					</select>
+							<button type="button" class="btn btn-primary" id="btnAsignarAlumno" style="margin-top:10px;">Asignar</button>
+							<br>
+							<article id="tablita">
+							<h3>Lista</h3>
+							<table class="table">
+							    <thead>
+							      <tr>
+							        <th>Alumno</th>
+							        <th>Tutor</th>
+							        <th>Carrera</th>
+							      </tr>
+							    </thead>
+							    <tbody id="tableTuto">
+							      
+							    </tbody>
+							  </table>
+							  </article>
+	  					</div>
+				</div>
+		</article>
+	</section>
+
+</body>
+</html>
